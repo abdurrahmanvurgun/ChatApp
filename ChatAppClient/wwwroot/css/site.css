@@ -1,0 +1,40 @@
+
+
+body {
+    box-sizing: content-box;
+    max-height: 100%;
+}
+
+#chat3 .form-control {
+    border-color: transparent;
+}
+
+#chat3 .form-control:focus {
+        border-color: transparent;
+        box-shadow: inset 0px 0px 0px 1px transparent;
+ }
+
+.badge-dot {
+    display:flex;
+    position:fixed;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    margin-left: 2.9rem;
+    margin-top: -.75rem;
+}
+#imputdiv {
+    display: flex;
+    position: fixed;
+    border-radius: 25px;
+    padding: 20px;
+    width: max-content;
+    height: 100px;
+    bottom: 100px;
+    box-shadow: 3px 10px lightblue;
+}
+#exampleFormControlInput2 {
+    margin-right: 2rem;
+    height: 100%;
+    width: 100%;
+}
