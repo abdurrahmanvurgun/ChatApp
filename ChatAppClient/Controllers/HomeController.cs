@@ -8,11 +8,12 @@ namespace ChatAppClient.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        
+        public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
-            _dbContext = dbcontext;
+           
         }
-
         public IActionResult Index()
         {
             return View();
