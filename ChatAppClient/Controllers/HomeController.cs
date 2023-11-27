@@ -8,8 +8,6 @@ namespace ChatAppClient.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private readonly DbContext _dbContext;
-        public HomeController(ILogger<HomeController> logger,DbContext dbcontext)
         {
             _logger = logger;
             _dbContext = dbcontext;

@@ -2,7 +2,6 @@
 $(document).ready(() => {
     const connection = new signalR.HubConnectionBuilder()
         .withUrl("https://localhost:7218/chathub")
-        .withAutomaticReconnect([1000,1000,2000,3000])
         .build();
 
     async function start() {
@@ -57,7 +56,6 @@ connection.on("userLeaved",connectionId=>{
 
     $("#btnGonder").click(() => {
         let message = $("#exampleFormControlInput2").val();
-        connection.invoke("SendMessageAsync", message).catch(error => console.log("Mesaj gönderilirken hata oluştu. ${error}"));
     });
 
     connection.on("receiveMessage", message => {
